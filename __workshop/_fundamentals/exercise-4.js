@@ -18,7 +18,12 @@ const people = [
 // returns an array of just the people that are older than the specified age.
 
 function olderPeople(peopleArr, age) {
-  // return something
+  let newArr = peopleArr.filter(element => {
+    if (element.age >= age) return element;
+    else;
+    
+  })
+return newArr;
 }
 
 // 2. Do a console.log to verify your function.
