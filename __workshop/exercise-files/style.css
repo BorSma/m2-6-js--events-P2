@@ -1,6 +1,6 @@
 /* add css here */
 css
-{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,9 +11,23 @@ css
     font-family: "Jost";
   }
 
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+}
 
   .wrapper{
       font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      text-align: right;
       display: flex;
       justify-content: center;
       margin-top: 32px;
@@ -25,3 +39,93 @@ css
       0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
       0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
   }
+
+input {
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: none;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(18, 101, 255);
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    flex-grow: 1;
+    min-width: 350px;
+}
+
+.termslabel {
+    width: 200px;
+}
+
+.checkbox {
+    width: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: hsl(333deg, 100%, 44%);
+    color: white;
+    font-family: 'Jost', sans-serif;
+    border-radius: 16px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}   
+
+  .submit{
+      background-color: hsl(256deg, 100%, 44%);
+    }
+
+.fix{
+    display: none;
+    justify-content: center;
+    text-align: center;
+    background-color: pink;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    max-width: 350px;
+    flex-grow: flex;
+    flex-wrap: wrap;
+}
+
+.fixLength{
+    display: flex;
+}
+
+.passRed{
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+.fixMatch{
+    display: flex;
+}
+
+.fixTerms{
+    display: flex;
+}
